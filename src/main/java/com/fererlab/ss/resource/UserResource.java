@@ -18,7 +18,8 @@ public class UserResource {
     @POST
     @Path("/login")
     @ApiOperation(value = "login", notes = "login method, accepts username and password in the form of <b>LoginRequestDTO</b> which contains username/password, returns <b>LoginResponseDTO</b>, you can find <b>UserDTO</b> and <b>LastLoginDTO</b> inside.")
-    public ResponseDTO login(@ApiParam(value = "Login request DTO, username and password cannot be null or empty") LoginRequestDTO loginRequestDTO) {
+    public ResponseDTO login(@ApiParam(value = "Login request DTO, username and password cannot be null or empty")
+                                 LoginRequestDTO loginRequestDTO) {
         if (loginRequestDTO.getUsername() != null && loginRequestDTO.getUsername() != null) {
             LoginResponseDTO loginResponseDTO = new LoginResponseDTO();
             loginResponseDTO.setUserDTO(new UserDTO("john", "jhon-wick", "13. Elm Street", "555-4433", "john@wick.go"));

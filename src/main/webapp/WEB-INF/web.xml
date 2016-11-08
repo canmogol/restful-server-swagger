@@ -10,7 +10,7 @@
     </mime-mapping>
 
     <servlet>
-        <servlet-name>SwaggerJaxrsConfiguration</servlet-name>
+        <servlet-name>SwaggerConfigServlet</servlet-name>
         <servlet-class>com.fererlab.ss.api.SwaggerConfigServlet</servlet-class>
         <init-param>
             <param-name>api.version</param-name>
@@ -23,7 +23,7 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SwaggerJaxrsConfiguration</servlet-name>
+        <servlet-name>SwaggerConfigServlet</servlet-name>
         <url-pattern>/swagger-servlet-dont-need-url-mapping-it-just-needs-to-load-at-startup</url-pattern>
     </servlet-mapping>
 
