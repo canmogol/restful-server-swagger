@@ -22,7 +22,7 @@ public class UserResource {
                                  LoginRequestDTO loginRequestDTO) {
         if (loginRequestDTO.getUsername() != null && loginRequestDTO.getUsername() != null) {
             LoginResponseDTO loginResponseDTO = new LoginResponseDTO();
-            loginResponseDTO.setUserDTO(new UserDTO("john", "jhon-wick", "13. Elm Street", "555-4433", "john@wick.go"));
+            loginResponseDTO.setUserDTO(new UserDTO("john", "john-wick", "13. Elm Street", "555-4433", "john@wick.go"));
             loginResponseDTO.setLastLoginDTO(new LastLoginDTO("92.32.4.30", new Date(), "Chrome 23.344", "MacOS-10.1"));
             return loginResponseDTO;
         } else {
